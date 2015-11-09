@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="a2os"
+           fetch="https://github.com/A2OS" />
+
   <remote  name="aosp"
            fetch="git://codeaurora.org"
            revision="refs/tags/android-6.0.0_r26" />
