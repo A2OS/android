@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="a2os"
-           fetch="https://github.com/A2OS" />
+           fetch="https://github.com" />
 
   <remote  name="aosp"
            fetch="git://codeaurora.org"
@@ -25,9 +25,9 @@
            sync-j="4" />
 
 <!-- BEGIN A2OS -->
-  <project path="build/firmware" name="android_build_firmware" remote="a2os" revision="master"/>
-  <project path="packages/apps/Stk" name="android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="a2os" />
-  <project path="vendor/cm" name="android_vendor_cm" remote="a2os" />
+  <project path="build/firmware" name="A2OS/android_build_firmware" remote="a2os" revision="master"/>
+  <project path="packages/apps/Stk" name="A2OS/android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="a2os" />
+  <project path="vendor/cm" name="A2OS/android_vendor_cm" remote="a2os" />
 <!-- END A2OS -->
 
 <!-- BEGIN CYANOGENMOD -->
