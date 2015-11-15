@@ -25,16 +25,16 @@
            sync-j="4" />
 
 <!-- BEGIN A2OS -->
+  <project path="android" name="A2OS/android" remote="a2os" />
+  <project path="build" name="A2OS/android_build" groups="pdk" remote="a2os" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="build/firmware" name="A2OS/android_build_firmware" remote="a2os" revision="master"/>
   <project path="packages/apps/Stk" name="A2OS/android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="a2os" />
   <project path="vendor/cm" name="A2OS/android_vendor_cm" remote="a2os" />
 <!-- END A2OS -->
 
 <!-- BEGIN CYANOGENMOD -->
-  <project path="build" name="CyanogenMod/android_build" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="android" name="CyanogenMod/android" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
