@@ -5,8 +5,11 @@
            fetch="https://github.com" />
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
+           fetch="git://codeaurora.org"
+           revision="refs/tags/android-6.0.0_r26" />
+
+  <remote  name="tuna"
+           fetch="git://aosp.tuna.tsinghua.edu.cn/android"
            revision="refs/tags/android-6.0.0_r26" />
 
   <remote  name="github"
@@ -454,7 +457,7 @@
   <project path="external/proguard" name="platform/external/proguard" groups="pdk" remote="aosp" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" remote="aosp" />
   <project path="external/regex-re2" name="platform/external/regex-re2" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="external/replicaisland" name="platform/external/replicaisland" groups="pdk-cw-fs,pdk-fs" remote="tuna" />
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" remote="aosp" />
